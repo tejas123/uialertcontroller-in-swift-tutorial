@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AlertControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76K-t3-Hax">
+                                <rect key="frame" x="64" y="230" width="193" height="30"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.37647058820000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="MDp-l6-SA9"/>
+                                    <constraint firstAttribute="height" constant="30" id="XRf-uQ-TwD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Show Alert Style">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShowAlertStyleTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Us-3R-cQl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEm-ll-kHC">
+                                <rect key="frame" x="64" y="308" width="193" height="30"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.37647058820000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="97N-X7-qN4"/>
+                                    <constraint firstAttribute="height" constant="30" id="spg-2s-N91"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Show Ation Sheet Style">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShowActionSheetStyleTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pOR-UC-oOR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfY-Xh-v7v">
+                                <rect key="frame" x="0.0" y="451" width="320" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="aNr-gg-Gy3"/>
+                                    <constraint firstAttribute="height" constant="27" id="v9v-1j-WT1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.37647058820000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-BH-M6A">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="qKt-vs-OLx"/>
+                                    <constraint firstAttribute="height" constant="44" id="yvD-e2-AtH"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.98823529409999999" green="0.37647058820000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="AlertController Demo" id="DbE-NO-Ziu"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="FfY-Xh-v7v" secondAttribute="centerY" constant="-180.5" id="37q-4i-q6l"/>
+                            <constraint firstAttribute="centerX" secondItem="76K-t3-Hax" secondAttribute="centerX" id="EJI-6L-bQK"/>
+                            <constraint firstItem="Aev-BH-M6A" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="PNa-eJ-lsu"/>
+                            <constraint firstAttribute="centerY" secondItem="lEm-ll-kHC" secondAttribute="centerY" constant="-39" id="apA-5Q-do7"/>
+                            <constraint firstAttribute="centerY" secondItem="76K-t3-Hax" secondAttribute="centerY" constant="39" id="kcq-aR-AUV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aev-BH-M6A" secondAttribute="trailing" constant="-16" id="lKy-mv-7AD"/>
+                            <constraint firstAttribute="centerX" secondItem="lEm-ll-kHC" secondAttribute="centerX" id="tSj-Fw-TWs"/>
+                            <constraint firstItem="Aev-BH-M6A" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="x29-6R-Lcu"/>
+                            <constraint firstAttribute="centerX" secondItem="FfY-Xh-v7v" secondAttribute="centerX" id="yB4-U0-51x"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lblMessage" destination="FfY-Xh-v7v" id="5nh-Pn-5RR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="416"/>
+        </scene>
+    </scenes>
+</document>
